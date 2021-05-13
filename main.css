@@ -1,0 +1,13 @@
+.color{
+    background-color: aqua;
+}
+
+#container{
+    width:80%;
+    margin-left: 10%;
+}
+
+
+let HTML = '';
+
+    for (let i = 0; i < listOfCars)

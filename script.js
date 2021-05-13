@@ -75,22 +75,46 @@
  for (let i = 0; i < listOfCars.length; i++) {
     const car = listOfCars[i];
     
-    if(car.type == null){
-        car.type = "beduomenis.type";
-    }
+    // if(car.type == null){
+    //     car.type = "beduomenis";
+    // }
 
-    if(car.model == null){
-        car.model = "beduomenis.model";
-    }
+    // if(car.model == null){
+    //     car.model = "beduomenis";
+    // }
 
-    if(car.color == null){
-        car.color = "beduomenis.color";
-    }    
+    // if(car.color == null){
+    //     car.color = "beduomenis";
+    // }    
     
-    if(car.price == null){
-        car.price = "Sutartine";
-    }
+    // if(car.price == null){
+    //     car.price = "Sutartine";
+    // }
     
-    console.log(listOfCars[i]['type'] + " " + car['model'] + " " + car.color + " "+ car.price )
+    if(car.type == null
+        || car.model == null
+        || car.color == null ){
+            console.log("Klaidingi duomenys");
+        }else if(car.price === undefined ){
+            car.price = "sutartine";
+            console.log(listOfCars[i]['type'] + " " + car['model'] + " " + car.color + " "+ car.price )
+        }else {
+            console.log(listOfCars[i]['type'] + " " + car['model'] + " " + car.color + " "+ car.price )
+        }
 
 }
+
+// filtravimas
+// listOfCars = listOfCars.filter((car) => car.type == "Fiat");
+
+// cars = [];
+// for (ley i = 0; i < listOfCars) 
+
+
+
+//maps
+
+
+//
+
+document.getElementById("container").innerHTML = HTML;
